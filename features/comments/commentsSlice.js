@@ -8,7 +8,7 @@ export const fetchComments = createAsyncThunk(
         return response.json();
     }
 );
-export const postComments = createAsyncThunk(
+export const postComment = createAsyncThunk(
     'comments/postComment',
     async (payload, {dispatch, getState}) => {
         setTimeout(() => {
